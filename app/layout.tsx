@@ -14,9 +14,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <NavigationMenu />
-          <AuthButton />
-          {children}
+        <NavigationMenu isFullWidth={false} isMobileMenu={false}/>
+        <AuthButton />
+        {children}
+        <div className="h-[2000px] bg-blue-100">
+
+        </div>
       </body>
     </html>
   );
